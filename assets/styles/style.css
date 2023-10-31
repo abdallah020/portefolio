@@ -1,0 +1,314 @@
+*,html,body{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+}
+#page{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-image: url("../images/pen-g00aca347a_1920.jpg");
+}
+/*permet d'importé les polices d'écriture déja télécharger*/
+@font-face {
+      font-family: "font1";
+      src: url("./fonts/Luxurious_Roman/LuxuriousRoman-Regular.ttf");
+}
+@font-face{
+    font-family: "font2";
+    src: url("./fonts/Neonderthaw/Neonderthaw-Regular.ttf");
+}
+@font-face{
+    font-family: "font3-1";
+    src: url("./fonts/Tangerine/Tangerine-Bold.ttf");
+}
+@font-face{
+    font-family: "font3-2";
+    src: url("./fonts/Tangerine/Tangerine-Regular.ttf");
+}
+
+#header{
+    width: 100%;
+    height: 100%;
+    background-color: #E67E22;
+    opacity: 0.8;/*dimunie l'opacité de la couleur*/
+    display: flex;
+    align-items: center;/*permet de centrer verticalement*/
+    justify-content: center;/*permet de centrer horizontalement*/
+    flex-direction: column;/*l'ordre d'affichage vertical*/
+}
+#user_image{
+    width: 200px;
+    height: 200px;
+}
+#user_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#user_info h3{
+   font-family: "font2";
+   color: white;
+   font-size: 2em;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#user_info h4{
+    font-family: "font1";
+    color: white;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#conteneur_principale{
+    width: 100%;
+    background-color: f2f3f4;
+    text-align: center;
+    padding-top: 100px;
+}
+.titre{
+    font-family: "font1";
+    font-size: 4em;
+    color: #E67E22;
+}
+/*-----------------------Infos-----------------------*/
+.infos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.infos_gauche{
+    width: 40%;
+    font-family: "font1";
+    text-align: left;
+}
+.infos_gauche div span{
+    font-weight: bold;
+    width: 130px;
+    display: inline-block;
+    
+}
+.infos_gauche div{
+    margin-top: 30px;
+    
+}
+.infos_droit{
+    width: 50%;
+    font-family: "font3-2";
+    text-align: left;
+}
+.infos_droit h3{
+    font-size: 2em;
+}
+.infos_droit p{
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+#social_icons{
+    width: 100%
+    margin-top: 30px;
+}
+#social_icons a{
+    background-color: #E67E22;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left:10px;
+}
+#social_icons a img{
+    width: 100%;
+    height: 100%;
+}
+/*--------------------Mon cv-------------------*/
+.mon_cv{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mon_cv ul{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 50px;
+}
+.mon_cv ul li{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+.li_gauche{
+   border-right: 5px solid #E67E22;
+   width: 50%;
+   padding: 20px;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.li_droit{
+    border-left: 5px solid #E67E22;
+    float: right;
+    width: 50%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.li_gauche:hover{
+    border-radius: 10px;
+    width: 60%;
+}
+.li_droit:hover{
+    border-radius: 10px;
+    width: 60%;
+}
+.mon_cv ul h3{
+    background-color: #E67E22;
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
+    color: white;
+    font-family: "font1";
+    font-size: 2em;
+    font-weight: bold;
+}
+/*--------------------------education-------------------------*/
+.education{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.education ul{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 50px;
+}
+.education ul li{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+.li_gauche{
+   border-right: 5px solid #E67E22;
+   width: 50%;
+   padding: 20px;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.li_droit{
+    border-left: 5px solid #E67E22;
+    float: right;
+    width: 50%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.li_gauche:hover{
+    border-radius: 10px;
+    width: 60%;
+}
+.li_droit:hover{
+    border-radius: 10px;
+    width: 60%;
+}
+.education_cv ul h3{
+    background-color: #E67E22;
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
+    color: white;
+    font-family: "font1";
+    font-size: 2em;
+    font-weight: bold;
+}
+/*---------------------realisation--------------------*/
+
+.mes_realisations {
+    width: 100%;
+    background-color: #e67e22;
+    margin-top: 100px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  
+}
+.item_realisations {
+    width: 250px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 50px;
+    
+  }
+  .item_realisation_img{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 80px;
+    margin-left: 29%;
+    padding: 15px;
+  }
+  .item_realisation_img img{
+    width: 90%;
+    height: 90%;
+  }
+
+.mes_realisations h3 {
+    font-family: "font1";
+    font-size: 1.5em;
+}
+.mes_realisations p {
+    font-size: 0.8em;
+}
+
+/*---------------------footer------------------*/
+.footer{
+    width: 100%;
+    height: 100%;
+}
+.footer h3{
+    font-family: "font1";
+    color: #E67E22;     
+    font-size: 3em;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.text{
+    text-align: centr;
+    width: 32%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 33%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #E67E22;
+
+}
+.bouton{
+    width: 30%;
+    padding: 20px;
+    margin-left: 26px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #E67E22;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: "font1";
+    font-size: 1.1em;
+}
+.bouton a{
+    text-decoration: none;
+    color: white;
+}
